@@ -20,7 +20,7 @@ AND password = '".$password."';";
 // Execution de la requête
 ```
 
-Ainsi, en entrant dans la section du nom d'utilisateur "**anto’;--**" la requête SQL devient :
+Ainsi, en entrant dans la section du nom d'utilisateur "anto’;--" la requête SQL devient :
 
 ```sql
 select * from user_table where
@@ -41,7 +41,7 @@ username = 'anto' and
 password = 'password';
 ```
 
-On peut très bien contourner le mot de passe, en entrant dans la section du mot de passe la commande « **'or 1=1;--'** » qui transforme la requête comme ceci :
+On peut très bien contourner le mot de passe, en entrant dans la section du mot de passe la commande « 'or 1=1;--' » qui transforme la requête comme ceci :
 
 ```sql
 select * from user_table where
