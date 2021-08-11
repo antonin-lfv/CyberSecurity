@@ -1,3 +1,9 @@
+---
+description: >-
+  Ces opérations sont à utiliser en premier recours, pour vérifier si le système
+  n'est pas totalement désuet de toute sécurité.
+---
+
 # Injections basiques
 
 #### 1. Par le nom d'utilisateur
@@ -10,7 +16,7 @@ where username = 'anto'
 and password = 'mystrongpassword';
 ```
 
-En supposant que le mot de passe ne soit pas haché, la requête PHP ressemblerai à celle-ci :
+En supposant que le mot de passe ne soit pas haché, la requête PHP ressemblerait à ceci :
 
 ```php
 // Connexion à la database
@@ -20,7 +26,7 @@ AND password = '".$password."';";
 // Execution de la requête
 ```
 
-Ainsi, en entrant dans la section du nom d'utilisateur "anto’;--" la requête SQL devient :
+Ainsi, en entrant dans la section du nom d'utilisateur « **anto’;--** » la requête SQL devient :
 
 ```sql
 select * from user_table where
@@ -41,7 +47,7 @@ username = 'anto' and
 password = 'password';
 ```
 
-On peut très bien contourner le mot de passe, en entrant dans la section du mot de passe la commande « 'or 1=1;--' » qui transforme la requête comme ceci :
+On peut très bien contourner le mot de passe, en entrant dans la section du mot de passe la commande « **'or 1=1;--'** » qui transforme la requête comme ceci :
 
 ```sql
 select * from user_table where

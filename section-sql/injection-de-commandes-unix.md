@@ -36,7 +36,13 @@ Ainsi, après avoir saisi l'argument attendu par le formulaire, on ajoute une au
 127.0.0.1 ; sort index.php 
 ```
 
+Cette commande va ainsi afficher index.php sans que le fichier soit compilé. 
 
+De la même manière, si on devait rechercher un mot clé en particulier dans un fichier, comme un flag, alors on pourrait utiliser la commande [grep](http://www.linux-france.org/article/man-fr/man1/grep-1.html) :
+
+```
+127.0.0.1 ; grep "flag" index.php 
+```
 
 {% hint style="success" %}
 Si ce type de faille n'est pas pris en compte sur l'application, alors on pourrait récupérer des données confidentielles comme des mots de passe.
