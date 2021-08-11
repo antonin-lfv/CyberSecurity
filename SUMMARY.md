@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Accueil 🏠](README.md)
-* [Injections SQL 💉](in-band-injection/README.md)
-  * [Injections basiques](in-band-injection/injections-basiques.md)
-  * [Injection par UNION](in-band-injection/injection-par-union.md)
+* [Injections SQL 💉](section-sql/README.md)
+  * [Injections basiques](section-sql/injections-basiques.md)
+  * [Injection par UNION](section-sql/injection-par-union.md)
 
