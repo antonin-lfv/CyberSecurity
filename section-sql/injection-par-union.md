@@ -1,6 +1,4 @@
-# Injection de commandes SQL
-
-## 1. Par méthode UNION
+# Injection par UNION
 
 #### Les objectifs de cette techniques sont :
 

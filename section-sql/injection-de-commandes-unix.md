@@ -33,7 +33,7 @@ $ commande1 arg1 opts1 || commande2 arg2 opts2 || commande3 arg3 opts3
 Ainsi, après avoir saisi l'argument attendu par le formulaire, on ajoute une autre commande avec le moyen qui vous convient. Si le formulaire demande une IP à ping, alors on pourrait essayer de rentrer la commande :
 
 ```
-127.0.0.1 ; cat index.php 
+127.0.0.1 ; sort index.php 
 ```
 
 
