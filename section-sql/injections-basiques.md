@@ -20,7 +20,7 @@ AND password = '".$password."';";
 // Execution de la requête
 ```
 
-Ainsi, en entrant dans la section du nom d'utilisateur "**anto’;--**" la requête SQL devient :
+Ainsi, en entrant dans la section du nom d'utilisateur « **anto’;--** » la requête SQL devient :
 
 ```sql
 select * from user_table where
