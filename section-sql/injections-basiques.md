@@ -1,7 +1,8 @@
 ---
 description: >-
   Ces opérations sont à utiliser en premier recours, pour vérifier si le système
-  n'est pas totalement désuet de toute sécurité.
+  est un minimum sécurisé et permettent de se connecter à un service, en ne
+  connaissant que l'identifiant.
 ---
 
 # Injections basiques
@@ -30,7 +31,7 @@ Ainsi, en entrant dans la section du nom d'utilisateur « **anto’;--** » la r
 
 ```sql
 select * from user_table where
-username = 'anto';-- and password = 'mystrongpassword'
+username = 'anto';-- and password = ''
 ```
 
 Or, le double tiret permet de commenter du code en SQL, ce qui revient donc à contourner le mot de passe, et à pouvoir se connecter en ayant uniquement besoin du nom d'utilisateur.
