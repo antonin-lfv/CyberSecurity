@@ -1,4 +1,16 @@
-# Injection par UNION
+# Injection de commandes SQL
+
+## 1. Se connecter sans identifiant et sans mot de passe
+
+On tape dans l'identifiant : 
+
+```sql
+' OR 1=1 ;--
+```
+
+Et on n'oublie pas de mettre un mot de passe aléatoire, au cas ou le système vérifie si un mot de passe est rentré.
+
+## 2. Par méthode UNION
 
 #### Les objectifs de cette techniques sont :
 
