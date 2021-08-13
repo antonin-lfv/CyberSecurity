@@ -1,6 +1,6 @@
 # Injection de commandes SQL
 
-## Se connecter sans identifiant et sans mot de passe
+## Connexion sans identifiant et sans mot de passe
 
 On tape dans l'identifiant : 
 
@@ -14,7 +14,7 @@ Et on n'oublie pas de mettre un mot de passe aléatoire, au cas ou le système v
 Si une erreur est affiché comme 'SQL error', alors il y a une faille dans la gestion du formulaire. Dans cas on va pouvoir l'exploiter pour en tirer d'autres infos. Si aucune sécurité n'est mise en place, la connexion se fera sur le premier utilisateur de la base de données.
 {% endhint %}
 
-## Se connecter avec seulement l'identifiant
+## Connexion avec seulement l'identifiant
 
 #### 1. Par le nom d'utilisateur
 
