@@ -49,7 +49,7 @@ You have an error in your SQL syntax; check the manual that corresponds to your
 MySQL server version for the right syntax to use near '''' AND pass=''' at line 1
 ```
 
-Ce script est donc vulnérable et nous apprenons que le serveur SQL est MySQL. Mais dans l'hypothèse où le paramètre se retrouve entre double-quote, il faut aussi tester l'utilisation de double-quote. Cependant le serveur où le script s'exécute peut être configuré pour 
+Ce script est donc vulnérable et nous apprenons que le serveur SQL est MySQL. Mais dans l'hypothèse où le paramètre se retrouve entre double-quote, il faut aussi tester l'utilisation de double-quote. Cependant le serveur où le script s'exécute peut être configuré pour ne pas afficher de message d'erreur \(Mettre display\_errors = Off dans php.ini par exemple\) ou bien utiliser des try/catch \(C\#, Java, PHP5 ...\) pour gérer les exceptions, les anomalies de fonctionnement et donner l'impression d'un fonctionnement normal de l'application.
 
 
 
