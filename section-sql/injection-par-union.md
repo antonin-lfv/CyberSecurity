@@ -1,6 +1,6 @@
 # Injection de commandes SQL
 
-## 1. Se connecter sans identifiant et sans mot de passe
+## Se connecter sans identifiant et sans mot de passe
 
 On tape dans l'identifiant : 
 
@@ -11,10 +11,10 @@ On tape dans l'identifiant :
 Et on n'oublie pas de mettre un mot de passe aléatoire, au cas ou le système vérifie si un mot de passe est rentré.
 
 {% hint style="warning" %}
-Si une erreur est affiché comme 'SQL error', alors il y a une faille dans la gestion du formulaire. Dans cas on va pouvoir l'exploiter pour en tirer d'autres infos.  
+Si une erreur est affiché comme 'SQL error', alors il y a une faille dans la gestion du formulaire. Dans cas on va pouvoir l'exploiter pour en tirer d'autres infos. Si aucune sécurité n'est mise en place, la connexion se fera sur le premier utilisateur de la base de données.
 {% endhint %}
 
-## 2. Se connecter avec seulement l'identifiant
+## Se connecter avec seulement l'identifiant
 
 #### 1. Par le nom d'utilisateur
 
@@ -91,7 +91,7 @@ Il existe une infinité de conditions triviales, par exemple :
 Malheureusement pour nous, ces genres de vulnérabilités sont extrêmement rares, mais valent le coup d'être essayés.
 {% endhint %}
 
-## 3. Méthode UNION
+## Méthode UNION
 
 Une fois une vulnérabilité trouvée, on peut l'exploiter.
 
