@@ -61,5 +61,7 @@ Ce script est donc vulnérable et nous apprenons que le serveur SQL est MySQL. M
 
 {% page-ref page="injection-de-commandes-unix.md" %}
 
+{% page-ref page="sand-box-et-sqlmap.md" %}
+
 
 
