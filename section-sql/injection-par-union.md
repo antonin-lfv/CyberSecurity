@@ -58,7 +58,7 @@ On peut très bien contourner le mot de passe, en entrant dans la section du mot
 ```sql
 select * from user_table where
 username = 'anto' and
-password = 'password' or 1=1;--;
+password = '' or 1=1;--;
 ```
 
 Et qui de ce fait, rend totalement inutile la condition password='anto' vu que la condition 1=1 sera toujours vraie.
