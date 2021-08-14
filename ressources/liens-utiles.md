@@ -7,6 +7,7 @@
 * [Piosky's cheat sheet](https://cs.piosky.fr/web/sqli/mssql/)  ✅
 * [Injections SQL](https://kinsta.com/fr/blog/injections-sql/)  ✅
 * [SQL injection blog](https://www.cgsecurity.org/Articles/sql_injection/index.html)  ✅
+* [cheat sheet](https://www.notion.so/Web-94ad2fb1a92644098d8ed45994af513e)
 
 
 
