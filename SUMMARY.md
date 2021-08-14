@@ -9,7 +9,7 @@
 * [💉 - Injections SQL](section-sql/README.md)
   * [Injection de commandes SQL](section-sql/injection-par-union.md)
   * [Injection de commandes UNIX](section-sql/injection-de-commandes-unix.md)
-  * [Sand box et SQLMAP](section-sql/sand-box-et-sqlmap.md)
+  * [SQLMAP](section-sql/sand-box-et-sqlmap.md)
 * [📝 - HTTP](http.md)
 
 ## Web - Client

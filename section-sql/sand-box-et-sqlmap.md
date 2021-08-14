@@ -1,4 +1,4 @@
-# Sand box et SQLMAP
+# SQLMAP
 
 On va ici tenter de pénétrer un [site web ](http://testphp.vulnweb.com/)\(prévu à cet effet\) pour tester des attaques par injections SQL. Notamment avec l'utilisation du logiciel SQLMAP.
 
@@ -124,6 +124,4 @@ Table: users
 On peut donc voir que la table users contient un utilisateur dont l'identifiant et le mot de passe sont 'test'.
 
 
-
-## Avec injections SQL à la main
 
