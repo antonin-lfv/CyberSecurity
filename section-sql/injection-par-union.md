@@ -1,4 +1,4 @@
-# Injection de commandes SQL
+# Injection SQL
 
 ## Connexion sans identifiant et sans mot de passe
 

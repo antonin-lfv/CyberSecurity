@@ -6,9 +6,10 @@
 
 ---
 
-* [💉 - Injections SQL](section-sql/README.md)
-  * [Injection de commandes SQL](section-sql/injection-par-union.md)
-  * [Injection de commandes UNIX](section-sql/injection-de-commandes-unix.md)
+* [💉 - Injections](section-sql/README.md)
+  * [Injection SQL](section-sql/injection-par-union.md)
+  * [Injection UNIX](section-sql/injection-de-commandes-unix.md)
+  * [Faille XSS - injection HTML/JS](section-sql/faille-xss-injection-html-js.md)
   * [SQLMAP](section-sql/sand-box-et-sqlmap.md)
 * [📝 - HTTP](http.md)
 
