@@ -13,9 +13,3 @@ La cybersécurité consiste à protéger les ordinateurs, les serveurs, les appa
 * Le réseau
 * Les serveurs web cotés client et serveur
 
-
-
-
-
-
-
