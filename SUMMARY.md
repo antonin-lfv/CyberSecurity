@@ -20,5 +20,5 @@
 ## Ressources
 
 * [🌐 - Liens utiles](ressources/liens-utiles.md)
-* [📀 - Logiciels](ressources/logiciels.md)
+* [📀 - Tools](ressources/logiciels.md)
 
